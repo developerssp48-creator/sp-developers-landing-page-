@@ -186,6 +186,73 @@ export default function SkyLandPage() {
                   </div>
                 </div>
               </div>
+
+              {/* EMI Payment Options */}
+              <div className="mt-12">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">EMI Payment Options</h3>
+                <div className="grid gap-6 md:grid-cols-2">
+                  {/* 12 Months */}
+                  <div className="rounded-2xl border bg-white p-6 shadow-sm">
+                    <div className="inline-flex items-center rounded-full bg-red-100 px-3 py-1 text-sm font-semibold text-red-700">12 Months · ₹5,650 × 121 = ₹6,83,650</div>
+                    <div className="mt-4 space-y-2 text-sm">
+                      <div className="flex justify-between"><span className="text-gray-600">Booking Amount</span><span className="font-semibold">₹11,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Allotment Amount</span><span className="font-semibold">₹55,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">EMI per month (10,000 × 12M)</span><span className="font-semibold">₹1,20,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Special EMI (6th Month)</span><span className="font-semibold">₹50,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Balance within EMI period</span><span className="font-semibold">₹4,47,000</span></div>
+                    </div>
+                  </div>
+
+                  {/* 18 Months */}
+                  <div className="rounded-2xl border bg-white p-6 shadow-sm">
+                    <div className="inline-flex items-center rounded-full bg-yellow-100 px-3 py-1 text-sm font-semibold text-yellow-800">18 Months · ₹5,800 × 121 = ₹7,01,800</div>
+                    <div className="mt-4 space-y-2 text-sm">
+                      <div className="flex justify-between"><span className="text-gray-600">Booking Amount</span><span className="font-semibold">₹11,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Allotment Amount</span><span className="font-semibold">₹55,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">EMI per month (10,000 × 18M)</span><span className="font-semibold">₹1,80,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Every 6th Month Spl. EMI (2 × 40,000)</span><span className="font-semibold">₹80,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Balance within EMI period</span><span className="font-semibold">₹3,75,800</span></div>
+                    </div>
+                  </div>
+
+                  {/* 24 Months */}
+                  <div className="rounded-2xl border bg-white p-6 shadow-sm">
+                    <div className="inline-flex items-center rounded-full bg-red-100 px-3 py-1 text-sm font-semibold text-red-700">24 Months · ₹6,000 × 121 = ₹7,26,000</div>
+                    <div className="mt-4 space-y-2 text-sm">
+                      <div className="flex justify-between"><span className="text-gray-600">Booking Amount</span><span className="font-semibold">₹11,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Allotment Amount</span><span className="font-semibold">₹55,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">EMI per month (10,000 × 24M)</span><span className="font-semibold">₹2,40,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Every 6th Month Spl. EMI (3 × 30,000)</span><span className="font-semibold">₹90,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Balance within EMI period</span><span className="font-semibold">₹3,30,000</span></div>
+                    </div>
+                  </div>
+
+                  {/* 30 Months */}
+                  <div className="rounded-2xl border bg-white p-6 shadow-sm">
+                    <div className="inline-flex items-center rounded-full bg-purple-100 px-3 py-1 text-sm font-semibold text-purple-800">30 Months · ₹6,200 × 121 = ₹7,50,200</div>
+                    <div className="mt-4 space-y-2 text-sm">
+                      <div className="flex justify-between"><span className="text-gray-600">Booking Amount</span><span className="font-semibold">₹11,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Allotment Amount</span><span className="font-semibold">₹55,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">EMI per month (10,000 × 30M)</span><span className="font-semibold">₹3,00,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Every 6th Month Spl. EMI (4 × 30,000)</span><span className="font-semibold">₹1,20,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Balance within EMI period</span><span className="font-semibold">₹2,64,200</span></div>
+                    </div>
+                  </div>
+
+                  {/* 36 Months */}
+                  <div className="rounded-2xl border bg-white p-6 shadow-sm">
+                    <div className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-sm font-semibold text-blue-800">36 Months · ₹6,400 × 121 = ₹7,74,400</div>
+                    <div className="mt-4 space-y-2 text-sm">
+                      <div className="flex justify-between"><span className="text-gray-600">Booking Amount</span><span className="font-semibold">₹11,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Allotment Amount</span><span className="font-semibold">₹55,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">EMI per month (10,000 × 36M)</span><span className="font-semibold">₹3,60,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Every 6th Month Spl. EMI (5 × 30,000)</span><span className="font-semibold">₹1,50,000</span></div>
+                      <div className="flex justify-between"><span className="text-gray-600">Balance within EMI period</span><span className="font-semibold">₹2,34,400</span></div>
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-3 text-xs text-gray-500">Note: East Face charges ₹200/sq.yd; any corner ₹300/sq.yd. Registration expenses as per company policy.</p>
+              </div>
             </div>
 
             {/* Sidebar */}
