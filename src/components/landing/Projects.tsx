@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import type { Route } from 'next'
 
 type ProjectCard = {
   name: string
@@ -24,7 +25,7 @@ export default function Projects() {
 
         <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 max-w-4xl mx-auto px-4 sm:px-0">
           {projects.map((p) => (
-            <Link key={p.name} href={`/projects/${p.slug}`} className="group">
+            <Link key={p.name} href={`/projects/${p.slug}` as Route} className="group">
               <article className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md hover:shadow-xl transition-all duration-300">
                 <div className="aspect-[4/3] overflow-hidden relative">
                   <img src={p.image} alt={p.name} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
