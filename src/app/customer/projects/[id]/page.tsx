@@ -1,4 +1,6 @@
 import { prisma } from '@/lib/prisma'
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
 
 export default async function ProjectDetail({ params }: { params: { id: string } }) {
   const project = await prisma.project.findUnique({ where: { id: params.id }, include: { plots: true } })
