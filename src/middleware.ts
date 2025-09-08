@@ -14,29 +14,12 @@ function decodeRoleFromJwt(token: string): 'USER' | 'AGENT' | 'ADMIN' | null {
   }
 }
 
-export function middleware(req: NextRequest) {
-  const url = req.nextUrl
-  const token = req.cookies.get('sp_token')?.value
-  const role = token ? decodeRoleFromJwt(token) : null
-
-  const adminRoutes = ['/admin']
-  const agentRoutes = ['/agent']
-  const customerRoutes = ['/customer']
-
-  if (adminRoutes.includes(url.pathname)) {
-    if (role !== 'ADMIN') return NextResponse.redirect(new URL('/login', url))
-  }
-  if (agentRoutes.includes(url.pathname)) {
-    if (role !== 'AGENT') return NextResponse.redirect(new URL('/login', url))
-  }
-  if (customerRoutes.includes(url.pathname)) {
-    if (role !== 'USER') return NextResponse.redirect(new URL('/login', url))
-  }
+export function middleware(_req: NextRequest) {
   return NextResponse.next()
 }
 
 export const config = {
-  matcher: ['/admin', '/agent', '/customer'],
+  matcher: [],
 }
 
 
