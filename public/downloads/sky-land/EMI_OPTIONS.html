@@ -66,44 +66,83 @@
             margin-top: 25px;
         }
         
-        .emi-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+        .emi-schemes {
             margin: 30px 0;
         }
         
-        .emi-card {
-            background: #f8fafc;
-            border: 2px solid #e2e8f0;
+        .emi-scheme {
+            margin-bottom: 25px;
             border-radius: 12px;
-            padding: 25px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .scheme-header {
+            padding: 20px;
+            color: white;
             text-align: center;
-            transition: all 0.3s ease;
         }
         
-        .emi-card:hover {
-            border-color: #3b82f6;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
-        }
-        
-        .emi-card h4 {
-            color: #1e40af;
-            font-size: 1.3em;
+        .scheme-header h3 {
+            font-size: 1.5em;
             margin-bottom: 10px;
-        }
-        
-        .emi-card .duration {
-            font-size: 2em;
             font-weight: bold;
-            color: #059669;
-            margin: 10px 0;
         }
         
-        .emi-card .description {
-            color: #6b7280;
-            font-size: 0.9em;
+        .total-price {
+            font-size: 1.2em;
+            font-weight: bold;
+            opacity: 0.9;
+        }
+        
+        .red-header {
+            background: linear-gradient(135deg, #dc2626, #ef4444);
+        }
+        
+        .yellow-header {
+            background: linear-gradient(135deg, #d97706, #f59e0b);
+        }
+        
+        .purple-header {
+            background: linear-gradient(135deg, #7c3aed, #a855f7);
+        }
+        
+        .blue-header {
+            background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+        }
+        
+        .payment-details {
+            background: white;
+            padding: 25px;
+        }
+        
+        .payment-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        
+        .payment-row:last-child {
+            border-bottom: none;
+            font-weight: bold;
+            background: #f8fafc;
+            margin: 10px -25px -25px -25px;
+            padding: 15px 25px;
+            border-radius: 0 0 12px 12px;
+        }
+        
+        .payment-label {
+            color: #374151;
+            font-weight: 600;
+            flex: 1;
+        }
+        
+        .payment-amount {
+            color: #dc2626;
+            font-weight: bold;
+            font-size: 1.1em;
         }
         
         .highlight-box {
@@ -154,6 +193,26 @@
             color: #374151;
             margin-right: 10px;
             min-width: 80px;
+        }
+        
+        .notes-section {
+            background: #1e3a8a;
+            color: white;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .notes-section h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .note-content p {
+            margin: 8px 0;
+            font-size: 1.1em;
         }
         
         .terms {
@@ -239,38 +298,158 @@
             </div>
             
             <div class="section">
-                <h2>Flexible EMI Payment Plans</h2>
-                <p>We offer convenient EMI options to make your investment in Sky Land Organic Farm more accessible. Choose from our flexible payment plans designed to suit your budget.</p>
+                <h2>EMI Payment Options</h2>
+                <p>Detailed payment breakdown for Sky Land Organic Farm plots (121 sq yards)</p>
                 
-                <div class="emi-grid">
-                    <div class="emi-card">
-                        <h4>Plan 1</h4>
-                        <div class="duration">12 Months</div>
-                        <div class="description">Easy Monthly Installments</div>
+                <div class="emi-schemes">
+                    <!-- 12 Months EMI Scheme -->
+                    <div class="emi-scheme red-header">
+                        <div class="scheme-header">
+                            <h3>12 Months EMI Scheme</h3>
+                            <div class="total-price">5650/- x 121 = 6,83,650</div>
+                        </div>
+                        <div class="payment-details">
+                            <div class="payment-row">
+                                <span class="payment-label">Booking Amount:</span>
+                                <span class="payment-amount">11,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Allotment Amount:</span>
+                                <span class="payment-amount">55,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">EMI per month (10,000/- x 12M):</span>
+                                <span class="payment-amount">1,20,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Special EMI (6th Month):</span>
+                                <span class="payment-amount">50,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Plot Balance Amount within time of EMI Period 12 months:</span>
+                                <span class="payment-amount">4,47,000/-</span>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="emi-card">
-                        <h4>Plan 2</h4>
-                        <div class="duration">18 Months</div>
-                        <div class="description">Extended Payment Period</div>
+
+                    <!-- 18 Months EMI Scheme -->
+                    <div class="emi-scheme yellow-header">
+                        <div class="scheme-header">
+                            <h3>18 Months EMI Scheme</h3>
+                            <div class="total-price">5800/- x 121 = 7,01,800</div>
+                        </div>
+                        <div class="payment-details">
+                            <div class="payment-row">
+                                <span class="payment-label">Booking Amount:</span>
+                                <span class="payment-amount">11,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Allotment Amount:</span>
+                                <span class="payment-amount">55,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">EMI per month (10,000/- x 18M):</span>
+                                <span class="payment-amount">1,80,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Every 6th Month Spl.EMI 2 x 40,000/-:</span>
+                                <span class="payment-amount">80,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Plot Balance Amount within time of EMI Period 18 months:</span>
+                                <span class="payment-amount">3,75,800/-</span>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="emi-card">
-                        <h4>Plan 3</h4>
-                        <div class="duration">24 Months</div>
-                        <div class="description">Popular Choice</div>
+
+                    <!-- 24 Months EMI Scheme -->
+                    <div class="emi-scheme red-header">
+                        <div class="scheme-header">
+                            <h3>24 Months EMI Scheme</h3>
+                            <div class="total-price">6000/- x 121 = 7,26,000</div>
+                        </div>
+                        <div class="payment-details">
+                            <div class="payment-row">
+                                <span class="payment-label">Booking Amount:</span>
+                                <span class="payment-amount">11,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Allotment Amount:</span>
+                                <span class="payment-amount">55,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">EMI per month (10,000/- x 24M):</span>
+                                <span class="payment-amount">2,40,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Every 6th Month Spl.EMI 3 x 30,000/-:</span>
+                                <span class="payment-amount">90,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Plot Balance Amount within time of EMI Period 24 months:</span>
+                                <span class="payment-amount">3,30,000/-</span>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="emi-card">
-                        <h4>Plan 4</h4>
-                        <div class="duration">30 Months</div>
-                        <div class="description">Comfortable Payments</div>
+
+                    <!-- 30 Months EMI Scheme -->
+                    <div class="emi-scheme purple-header">
+                        <div class="scheme-header">
+                            <h3>30 Months EMI Scheme</h3>
+                            <div class="total-price">6200/- x 121 = 7,50,200</div>
+                        </div>
+                        <div class="payment-details">
+                            <div class="payment-row">
+                                <span class="payment-label">Booking Amount:</span>
+                                <span class="payment-amount">11,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Allotment Amount:</span>
+                                <span class="payment-amount">55,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">EMI per month (10,000/- x 30M):</span>
+                                <span class="payment-amount">3,00,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Every 6th Month Spl.EMI 4 x 30,000/-:</span>
+                                <span class="payment-amount">1,20,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Plot Balance Amount within time of EMI Period 30 months:</span>
+                                <span class="payment-amount">2,64,200/-</span>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="emi-card">
-                        <h4>Plan 5</h4>
-                        <div class="duration">36 Months</div>
-                        <div class="description">Maximum Flexibility</div>
+
+                    <!-- 36 Months EMI Scheme -->
+                    <div class="emi-scheme blue-header">
+                        <div class="scheme-header">
+                            <h3>36 Months EMI Scheme</h3>
+                            <div class="total-price">6400/- x 121 = 7,74,400</div>
+                        </div>
+                        <div class="payment-details">
+                            <div class="payment-row">
+                                <span class="payment-label">Booking Amount:</span>
+                                <span class="payment-amount">11,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Allotment Amount:</span>
+                                <span class="payment-amount">55,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">EMI per month (10,000/- x 36M):</span>
+                                <span class="payment-amount">3,60,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Every 6th Month Spl.EMI 5 x 30,000/-:</span>
+                                <span class="payment-amount">1,50,000/-</span>
+                            </div>
+                            <div class="payment-row">
+                                <span class="payment-label">Plot Balance Amount within time of EMI Period 36 months:</span>
+                                <span class="payment-amount">2,34,400/-</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -326,6 +505,15 @@
                 </div>
                 <div class="contact-item">
                     <strong>Office:</strong> C961 Mohan Shraddha Complex, near NGRI Metro Station, Hyderabad
+                </div>
+            </div>
+            
+            <div class="notes-section">
+                <h3>Note</h3>
+                <div class="note-content">
+                    <p><strong>East Face Charges:</strong> 200/-</p>
+                    <p><strong>Any Corner:</strong> 300/-</p>
+                    <p><strong>Registration Expenses:</strong> Fixed by the company</p>
                 </div>
             </div>
             
