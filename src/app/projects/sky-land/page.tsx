@@ -68,8 +68,9 @@ export default function SkyLandPage() {
                   🗺️ Download Layout
                 </a>
                 <a
-                  href="/downloads/sky-land/EMI%20PAYMENT%20OPTIONS.pdf"
-                  download
+                  href="/downloads/sky-land/EMI_OPTIONS.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
                 >
                   💳 Download EMI Options
@@ -326,8 +327,9 @@ export default function SkyLandPage() {
                     🗺️ Download Layout
                   </a>
                   <a
-                    href="/downloads/sky-land/EMI%20PAYMENT%20OPTIONS.pdf"
-                    download
+                    href="/downloads/sky-land/EMI_OPTIONS.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block w-full bg-gray-100 hover:bg-gray-200 text-center text-gray-700 font-medium py-2 px-4 rounded-lg transition-colors"
                   >
                     💳 Download EMI Options
