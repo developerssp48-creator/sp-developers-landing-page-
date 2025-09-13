@@ -25,8 +25,8 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold"><a href="#projects" className="hover:underline">Our Projects</a></h4>
             <ul className="mt-3 space-y-2 text-sm text-gray-300">
-              <li>Green Country II</li>
-              <li>Sky Land</li>
+              <li><a href="/projects/green-country-ii" className="hover:text-white">Green Country II</a></li>
+              <li><a href="/projects/sky-land" className="hover:text-white">Sky Land Organic Farm</a></li>
             </ul>
           </div>
           <div>
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
         <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 md:flex-row md:items-center md:justify-between">
           <p className="text-sm text-gray-400">© {new Date().getFullYear()} SP Developers</p>
-          <div className="text-sm text-gray-400">Hyderabad • +91 40 48905362 • spdevelopers2909@gmail.com</div>
+          <div className="text-sm text-gray-400">Hyderabad • +91 9704229406 • spdevelopers2909@gmail.com</div>
         </div>
       </div>
     </footer>

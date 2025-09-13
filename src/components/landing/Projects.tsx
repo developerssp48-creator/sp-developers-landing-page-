@@ -10,7 +10,7 @@ type ProjectCard = {
 }
 
 const projects: ProjectCard[] = [
-  { name: 'Sky Land', location: 'Kolanupaka, Alair', image: '/layout/skyland-master.png', slug: 'sky-land', status: 'in-progress' },
+  { name: 'Sky Land Organic Farm', location: 'Kolanupaka, Alair', image: '/layout/skyland-master.png', slug: 'sky-land', status: 'in-progress' },
   { name: 'Green Country II', location: 'Keesara', image: '/projects/layout-1.jpg', slug: 'green-country-ii', status: 'completed' },
 ]
 

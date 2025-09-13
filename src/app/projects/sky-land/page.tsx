@@ -36,7 +36,7 @@ export default function SkyLandPage() {
                 Premium Plots
               </div>
               <h1 className="text-5xl font-bold tracking-tight text-gray-900 mb-6">
-                Sky Land Properties
+                Sky Land Organic Farm
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 Premium plots in the heart of Kolanupaka, Alair. Experience modern living with nature's tranquility.
@@ -307,9 +307,9 @@ export default function SkyLandPage() {
                     <span>spdevelopers2909@gmail.com</span>
                   </a>
                 </div>
-                <button className="w-full mt-4 btn-primary">
+                <a href="https://wa.me/919704229406?text=Hi, I'd like to schedule a site visit for Sky Land Organic Farm." target="_blank" rel="noopener noreferrer" className="w-full mt-4 btn-primary text-center block">
                   Schedule Site Visit
-                </button>
+                </a>
                 <div className="mt-4 space-y-2">
                   <a
                     href="/downloads/sky-land/sky%20land%20brouchure.pdf"

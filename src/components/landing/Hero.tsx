@@ -23,7 +23,7 @@ export default function Hero() {
               <li>• Ready infrastructure and amenities</li>
             </ul>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
-              <a className="btn-primary w-full sm:w-auto text-center" href="#enquire">Book a Site Visit</a>
+              <a className="btn-primary w-full sm:w-auto text-center" href="https://wa.me/919704229406?text=Hi, I'd like to schedule a site visit for Sky Land Organic Farm." target="_blank" rel="noopener noreferrer">Book a Site Visit</a>
               <a className="inline-flex items-center font-semibold text-white/90 hover:text-white text-sm sm:text-base" href="#highlights">See Highlights →</a>
             </div>
           </div>

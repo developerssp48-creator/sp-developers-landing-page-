@@ -10,7 +10,7 @@ export default function WhatsAppWidget() {
   const handleSendMessage = () => {
     if (message.trim()) {
       const encodedMessage = encodeURIComponent(message)
-      const whatsappUrl = `https://wa.me/914048905362?text=${encodedMessage}`
+      const whatsappUrl = `https://wa.me/919704229406?text=${encodedMessage}`
       window.open(whatsappUrl, '_blank')
       setMessage('')
       setIsOpen(false)
@@ -19,7 +19,7 @@ export default function WhatsAppWidget() {
 
   const handleQuickMessage = (quickMsg: string) => {
     const encodedMessage = encodeURIComponent(quickMsg)
-    const whatsappUrl = `https://wa.me/914048905362?text=${encodedMessage}`
+    const whatsappUrl = `https://wa.me/919704229406?text=${encodedMessage}`
     window.open(whatsappUrl, '_blank')
     setIsOpen(false)
   }
@@ -72,10 +72,10 @@ export default function WhatsAppWidget() {
                 {/* Quick Message Buttons */}
                 <div className="space-y-2">
                   <button
-                    onClick={() => handleQuickMessage("Hi, I'm interested in Sky Land plots. Can you share more details?")}
+                    onClick={() => handleQuickMessage("Hi, I'm interested in Sky Land Organic Farm plots. Can you share more details?")}
                     className="w-full text-left p-3 bg-white rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors text-sm"
                   >
-                    📍 Sky Land - Plot Details
+                    📍 Sky Land Organic Farm - Plot Details
                   </button>
                   <button
                     onClick={() => handleQuickMessage("Hi, I want to know about Green Country II project.")}

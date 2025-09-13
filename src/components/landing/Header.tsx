@@ -33,7 +33,7 @@ export default function Header() {
               {l.label}
             </a>
           ))}
-          <a href="#enquire" className="rounded-md bg-spBlue px-3 lg:px-4 py-1.5 lg:py-2 text-white shadow hover:bg-spBlueDark text-xs lg:text-sm">Book Visit</a>
+          <a href="https://wa.me/919704229406?text=Hi, I'd like to schedule a site visit for Sky Land Organic Farm." target="_blank" rel="noopener noreferrer" className="rounded-md bg-spBlue px-3 lg:px-4 py-1.5 lg:py-2 text-white shadow hover:bg-spBlueDark text-xs lg:text-sm">Book Visit</a>
         </nav>
 
         <button
@@ -57,7 +57,7 @@ export default function Header() {
                 {l.label}
               </a>
             ))}
-            <a href="#enquire" className="rounded-md bg-spBlue px-4 py-2 text-white shadow mt-2" onClick={() => setOpen(false)}>Book Visit</a>
+            <a href="https://wa.me/919704229406?text=Hi, I'd like to schedule a site visit for Sky Land Organic Farm." target="_blank" rel="noopener noreferrer" className="rounded-md bg-spBlue px-4 py-2 text-white shadow mt-2" onClick={() => setOpen(false)}>Book Visit</a>
           </div>
         </div>
       )}
